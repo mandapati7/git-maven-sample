@@ -17,17 +17,7 @@ pipeline {
 					bat 'mvn test'
 				}
 			}
-		}
-		
-		stage('Deployment stage') {
-			steps {
-				withMaven(maven: 'Local-Maven') {
-					bat 'mvn deploy'
-				}
-			}
-		}
-		
-		
+		}	
 	
 	}
 }
